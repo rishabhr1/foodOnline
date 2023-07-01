@@ -10,7 +10,7 @@ from .utils import detectUser, send_verification_email
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.core.exceptions import PermissionDenied
 from django.utils.http import urlsafe_base64_decode
-
+from vendor.models import Vendor
 
 # Restrict the vendor from accessing customer page
 def check_role_vendor(user):
